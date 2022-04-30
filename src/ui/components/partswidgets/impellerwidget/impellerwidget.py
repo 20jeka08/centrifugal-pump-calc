@@ -22,6 +22,7 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
 
         self.nsLabel.setText(str(self.imp.ns))
         self.nqLabel.setText(str(self.imp.nq))
+        self.d2Label.setText(str(self.imp.D2(psi=self.imp.psi(ft=1.05))))
 
 
 if __name__ == '__main__':
