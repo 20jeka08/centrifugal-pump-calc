@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="impellercalc is created">
-      <change afterPath="$PROJECT_DIR$/codegen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/styles/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/styles/images/imp.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="some changes in UI and API of impeller widget">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651334172179</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some changes in UI and API of impeller widget">
+      <created>1651353356819</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651353356819</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +189,8 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="First project structure" />
     <MESSAGE value="impellercalc is created" />
-    <option name="LAST_COMMIT_MESSAGE" value="impellercalc is created" />
+    <MESSAGE value="some changes in UI and API of impeller widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes in UI and API of impeller widget" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
