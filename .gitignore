@@ -1,2 +1,4 @@
 /venv/
 /.idea/*
+ui_*
+*_rc.py
