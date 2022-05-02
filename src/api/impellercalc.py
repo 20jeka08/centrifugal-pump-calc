@@ -50,7 +50,7 @@ class ImpellerCalc:
 
     def b2(self, D2):
         '''Calculation recommended outlet width of the impeller - b2 [mm] with defined - D2 [mm]'''
-        b2_to_D2 = 0.017 + 0.262 * self.nq() / 100 - 0.08 * (self.nq() / 100) ** 2 + 0.0093 * (self.nq() / 100) ** 3
+        b2_to_D2 = 0.017 + 0.262 * self.nq / 100 - 0.08 * (self.nq / 100) ** 2 + 0.0093 * (self.nq / 100) ** 3
         b2 = D2 * b2_to_D2
         return round(b2, 2)
 

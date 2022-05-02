@@ -15,14 +15,17 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
 
     def calc_impeller(self):
 
-        self.imp.Q = float(self.volumeFlowRateLineEdit.text()) / 3600
-        self.imp.H = float(self.headPumpLineEdit.text())
-        self.imp.n = float(self.rotationSpeedLineEdit.text())
-        self.imp.i = 1
+        self.imp.Q = self.volumeFlowRateDoubleSpinBox.value() / 3600
+        self.imp.H = self.headPumpDoubleSpinBox.value()
+        self.imp.n = self.rotationSpeedDoubleSpinBox.value()
+        self.imp.i = self.numberStagesSpinBox.value()
 
         self.nsLabel.setText(str(self.imp.ns))
         self.nqLabel.setText(str(self.imp.nq))
-        self.d2Label.setText(str(self.imp.D2(psi=self.imp.psi(ft=1.05))))
+        D2 = self.imp.D2(psi=self.imp.psi(ft=self.hQCurveDoubleSpinBox.value()))
+        self.d2Label.setText(str(D2))
+        b2 = self.imp.b2(D2=D2)
+        self.b2Label.setText(str(b2))
 
 
 if __name__ == '__main__':
