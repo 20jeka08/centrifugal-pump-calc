@@ -9,6 +9,7 @@ class ImpellerCalc:
     H: Optional[float] = None
     n: Optional[float] = None
     i: Optional[int] = None
+    ro: Optional[float] = 997.0
 
     @property
     def Hi(self):
@@ -60,6 +61,10 @@ class ImpellerCalc:
         b2 = 0.07 * D2 * (ns / 100) ** (4 / 3)
         return round(b2, 2)
 
+    def L(self, D2):
+        L = 0.95*D2/2
+        return L
+
     def HydraulicEfficiencyRadialPumpSingleStage(self):
         '''Estimation of the centrifugal (radial) single stage pump hydraulic efficiency [%]. Hydraulic
         efficiency value based on specific speed - nq (nq<=100), and volume flow rate - Q [m^3/s]'''
@@ -67,8 +72,8 @@ class ImpellerCalc:
             a = 0.5
         else:
             a = 1
-        m = 0.08 * a * (1.0 / self.Q) ** 0.15 * (45 / self.nq()) ** 0.06
-        HydraulicEff = 1 - 0.055 * (1.0 / self.Q) ** m - 0.2 * (0.26 - np.log10(self.nq() / 25)) ** 2 * (
+        m = 0.08 * a * (1.0 / self.Q) ** 0.15 * (45 / self.nq) ** 0.06
+        HydraulicEff = 1 - 0.055 * (1.0 / self.Q) ** m - 0.2 * (0.26 - np.log10(self.nq / 25)) ** 2 * (
                     1.0 / self.Q) ** 0.1
         return round(HydraulicEff * 100, 2)
 
@@ -79,8 +84,8 @@ class ImpellerCalc:
             a = 0.5
         else:
             a = 1
-        m = 0.08 * a * (1.0 / self.Q) ** 0.15 * (45 / self.nq()) ** 0.06
-        HydraulicEff = 1 - 0.065 * (1.0 / self.Q) ** m - 0.23 * (0.3 - np.log10(self.nq() / 23)) ** 2 * (
+        m = 0.08 * a * (1.0 / self.Q) ** 0.15 * (45 / self.nq) ** 0.06
+        HydraulicEff = 1 - 0.065 * (1.0 / self.Q) ** m - 0.23 * (0.3 - np.log10(self.nq / 23)) ** 2 * (
                     1.0 / self.Q) ** 0.05
         return round(HydraulicEff * 100, 2)
 
@@ -91,8 +96,8 @@ class ImpellerCalc:
             a = 0.5
         else:
             a = 1.0
-        m = 0.1 * a * (1.0 / self.Q) ** 0.15 * (45.0 / self.nq()) ** 0.06
-        Efficiency = 1 - 0.095 * (1.0 / self.Q) ** m - 0.3 * (0.35 - np.log10(self.nq() / 23.0)) ** 2 * (
+        m = 0.1 * a * (1.0 / self.Q) ** 0.15 * (45.0 / self.nq) ** 0.06
+        Efficiency = 1 - 0.095 * (1.0 / self.Q) ** m - 0.3 * (0.35 - np.log10(self.nq / 23.0)) ** 2 * (
                     1.0 / self.Q) ** 0.05
         return round(Efficiency * 100, 2)
 
@@ -103,8 +108,8 @@ class ImpellerCalc:
             a = 0.5
         else:
             a = 1.0
-        m = 0.1 * a * (1.0 / self.Q) ** 0.15 * (45.0 / self.nq()) ** 0.06
-        Efficiency = 1 - 0.116 * (1.0 / self.Q) ** m - 0.4 * (0.26 - np.log10(self.nq() / 25)) ** 2
+        m = 0.1 * a * (1.0 / self.Q) ** 0.15 * (45.0 / self.nq) ** 0.06
+        Efficiency = 1 - 0.116 * (1.0 / self.Q) ** m - 0.4 * (0.26 - np.log10(self.nq / 25)) ** 2
         return round(Efficiency * 100, 2)
 
     def EfficiencyRadialSingleStageDoubleEntry(self):
@@ -114,8 +119,8 @@ class ImpellerCalc:
             a = 0.5
         else:
             a = 1.0
-        m = 0.1 * a * (1.0 / self.Q) ** 0.15 * (45.0 / self.nq()) ** 0.06
-        Efficiency = 1 - 0.095 * (1.0 / self.Q) ** m - 0.35 * (0.35 - np.log10(self.nq() / 17.7)) ** 2 * (
+        m = 0.1 * a * (1.0 / self.Q) ** 0.15 * (45.0 / self.nq) ** 0.06
+        Efficiency = 1 - 0.095 * (1.0 / self.Q) ** m - 0.35 * (0.35 - np.log10(self.nq / 17.7)) ** 2 * (
                     1.0 / self.Q) ** 0.05
         return round(Efficiency * 100, 2)
 
@@ -123,7 +128,7 @@ class ImpellerCalc:
         '''Calculation of the shaft diameter - dw[mm], based on maximal power on shaft - Pmax [W],
          material property - Tau [N/m^2], and user's factor safety for increasing shaft diameter value'''
         dw = 3.65 * (Pmax / self.n / Tau) ** (1 / 3)
-        return factorSafety * dw * 1000.0
+        return round(factorSafety * dw * 1000.0, 2)
 
     def D1LambdaMethod(self, shaftD, lambdaC=1.15, lambdaW=0.2):
         '''Calculation recommended suction diameter - D1 [mm] based on two chosen coefficients lambdaC and lambdaW
@@ -140,7 +145,7 @@ class ImpellerCalc:
          1.15<fd<1.25'''
         shaftD = shaftD / D2
         VolEff = VolEff / 100.0
-        D1rel = fd * np.sqrt(shaftD ** 2 + 1.48 * 10 ** -3 * psi * (self.nq() ** 1.33 / (VolEff) ** 0.67))
+        D1rel = fd * np.sqrt(shaftD ** 2 + 1.48 * 10 ** -3 * psi * (self.nq ** 1.33 / (VolEff) ** 0.67))
         D1 = D2 * D1rel
         return D1
 

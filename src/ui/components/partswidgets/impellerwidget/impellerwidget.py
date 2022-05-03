@@ -7,7 +7,7 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setupUi(self)
-        self.imp = None
+        self.imp = ImpellerCalc()
         self.calculatePushButton.clicked.connect(self.calc_impeller)
 
     def set_impeller(self, impeller: ImpellerCalc):
@@ -26,6 +26,36 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
         self.d2Label.setText(str(D2))
         b2 = self.imp.b2(D2=D2)
         self.b2Label.setText(str(b2))
+
+        if self.typePumpComboBox.currentText() == 'Single Stage, Single Entry':
+            Eff = self.imp.EfficiencyRadialSingleStageSingeEntry()
+            HydrEff = self.imp.HydraulicEfficiencyRadialPumpSingleStage()
+            C_kr = 1000.0
+        elif self.typePumpComboBox.currentText() == 'Single Stage, Double Entry':
+            Eff = self.imp.EfficiencyRadialSingleStageDoubleEntry()
+            HydrEff = self.imp.HydraulicEfficiencyRadialPumpSingleStage()
+            C_kr = 2000.0
+        else:
+            Eff = self.imp.EfficiencyRadialMultistageSingleEntry()
+            HydrEff = self.imp.HydraulicEfficiencyRadialPumpMultistage()
+            C_kr = 800.0
+
+        Pmax = self.imp.Pmax(Efficiency=Eff)
+        s_sf = self.shaftSafetyFactorDoubleSpinBox.value()
+        d0 = self.imp.shaftD(Pmax=Pmax, factorSafety=s_sf)
+        self.d0Label.setText(str(d0))
+        D0 = self.imp.D1LambdaMethod(shaftD=d0)
+        self.D0Label.setText(str(round(D0, 2)))
+        L = self.imp.L(D2=D2)
+        self.LLabel.setText(str(round(L, 2)))
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
