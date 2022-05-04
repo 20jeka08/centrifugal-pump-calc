@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="title">
+    <file>images/polytech_label.JPG</file>
+  </qresource>
+</RCC>
