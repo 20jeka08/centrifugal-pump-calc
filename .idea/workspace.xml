@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="main widget with title">
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="main window added tree widget">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -271,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651698459443</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="main window added tree widget">
+      <created>1651700312989</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1651700312989</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -295,7 +301,8 @@
     <MESSAGE value="created cavitation calculation of impeller" />
     <MESSAGE value="impeller widget was made" />
     <MESSAGE value="main widget with title" />
-    <option name="LAST_COMMIT_MESSAGE" value="main widget with title" />
+    <MESSAGE value="main window added tree widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="main window added tree widget" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

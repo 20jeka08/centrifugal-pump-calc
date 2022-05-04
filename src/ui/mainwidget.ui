@@ -69,35 +69,72 @@
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="20,80">
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0">
      <item>
-      <widget class="QTreeWidget" name="treeWidget">
-       <column>
-        <property name="text">
-         <string>Элемент насоса</string>
-        </property>
-       </column>
-       <item>
-        <property name="text">
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="styleSheet">
+        <string notr="true">font: 10pt &quot;Calibri&quot;;</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::North</enum>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Rounded</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="elideMode">
+        <enum>Qt::ElideNone</enum>
+       </property>
+       <property name="usesScrollButtons">
+        <bool>false</bool>
+       </property>
+       <property name="documentMode">
+        <bool>true</bool>
+       </property>
+       <property name="tabsClosable">
+        <bool>false</bool>
+       </property>
+       <property name="movable">
+        <bool>false</bool>
+       </property>
+       <property name="tabBarAutoHide">
+        <bool>false</bool>
+       </property>
+       <widget class="ImpellerWidget" name="impellerTab">
+        <attribute name="title">
          <string>Рабочее колесо</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="statorVanesTab">
+        <attribute name="title">
          <string>Лопаточный НА</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Лопаточный НА</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="statorChannelsTab">
+        <attribute name="title">
          <string>Канальный НА</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-     <item>
-      <widget class="QStackedWidget" name="stackedWidget">
-       <widget class="ImpellerWidget" name="page"/>
-       <widget class="QWidget" name="page_2"/>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Канальный НА</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </item>
     </layout>
