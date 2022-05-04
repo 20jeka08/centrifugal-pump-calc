@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="impeller widget was made">
-      <change afterPath="$PROJECT_DIR$/src/ui/mainwidget.py" afterDir="false" />
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="main widget with title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen.py" beforeDir="false" afterPath="$PROJECT_DIR$/codegen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +257,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651696269213</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="main widget with title">
+      <created>1651698445024</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651698445024</updated>
+    </task>
+    <task id="LOCAL-00015" summary="main widget with title">
+      <created>1651698459443</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651698459443</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +294,8 @@
     <MESSAGE value="created some Output parameters in UI of impeller widget" />
     <MESSAGE value="created cavitation calculation of impeller" />
     <MESSAGE value="impeller widget was made" />
-    <option name="LAST_COMMIT_MESSAGE" value="impeller widget was made" />
+    <MESSAGE value="main widget with title" />
+    <option name="LAST_COMMIT_MESSAGE" value="main widget with title" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

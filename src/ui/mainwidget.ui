@@ -69,10 +69,49 @@
     </widget>
    </item>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="20,80">
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string>Элемент насоса</string>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>Рабочее колесо</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Лопаточный НА</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Канальный НА</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <widget class="ImpellerWidget" name="page"/>
+       <widget class="QWidget" name="page_2"/>
+      </widget>
+     </item>
+    </layout>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImpellerWidget</class>
+   <extends>QWidget</extends>
+   <header>src.ui.components.partswidgets.impellerwidget.impellerwidget</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="styles/mainwidget.qrc"/>
  </resources>

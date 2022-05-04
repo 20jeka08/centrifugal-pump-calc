@@ -8,7 +8,7 @@ class MainWidget(QWidget, Ui_MainWidget):
         super().__init__(parent)
         self.setupUi(self)
 
-        self.horizontalLayout_2.addWidget(ImpellerWidget())
+
 
 if __name__ == '__main__':
     from PyQt5.QtWidgets import QApplication
