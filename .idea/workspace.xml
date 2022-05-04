@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="created cavitation calculation of impeller">
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="impeller widget was made">
+      <change afterPath="$PROJECT_DIR$/src/ui/mainwidget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen.py" beforeDir="false" afterPath="$PROJECT_DIR$/codegen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
       <recent name="D:\Python\centrifugal-pump-calc\src\ui\styles\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.impellerwidget">
+  <component name="RunManager" selected="Python.mainwidget">
     <configuration name="codegen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="centrifugal-pump-calc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,10 +128,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mainwidget" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="centrifugal-pump-calc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ui/mainwidget.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.impellerwidget" />
+        <item itemvalue="Python.mainwidget" />
         <item itemvalue="Python.codegen" />
+        <item itemvalue="Python.impellerwidget" />
         <item itemvalue="Python.impellercalc" />
       </list>
     </recent_temporary>
@@ -227,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651676490885</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="impeller widget was made">
+      <created>1651696269213</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1651696269213</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,14 +280,15 @@
     <MESSAGE value="created Input parameters in UI of impeller widget" />
     <MESSAGE value="created some Output parameters in UI of impeller widget" />
     <MESSAGE value="created cavitation calculation of impeller" />
-    <option name="LAST_COMMIT_MESSAGE" value="created cavitation calculation of impeller" />
+    <MESSAGE value="impeller widget was made" />
+    <option name="LAST_COMMIT_MESSAGE" value="impeller widget was made" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>4</line>
+          <line>3</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
