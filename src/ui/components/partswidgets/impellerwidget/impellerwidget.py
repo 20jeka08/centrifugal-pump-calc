@@ -72,7 +72,18 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
 
         self.cavitationCoefficientLabel.setText(str(C_kr))
         dh = self.imp.cavitationHead(C_kr=C_kr, doubleEntry=double_entry)
-        self.cavitationValueLabel.setText(str(dh))
+        self.cavitationValueLabel.setText(str(round(dh, 2)))
+
+        c2m = self.imp.c2m(D2, b2, volumeEfficiency=volume_efficiency)
+        u2 = self.imp.u2(D2)
+
+        Himp_pred = self.imp.impellerHead(c2m=c2m, u2=u2, e2=e1, D2=D2, Z=Z, hydraulicEff=HydrEff, Beta2=beta2)
+        H_pred = self.imp.pumpHead(c2m=c2m, u2=u2, e2=e1, D2=D2, Z=Z, hydraulicEff=HydrEff, Beta2=beta2)
+        P = self.imp.Q * H_pred * self.imp.ro * 9.81 / (Eff / 100)
+        self.headImpellerLabel.setText(str(Himp_pred))
+        self.headLabel.setText(str(H_pred))
+        self.powerLabel.setText(str(round(P, 2)))
+        self.efficiencyLabel.setText(str(Eff))
 
 if __name__ == '__main__':
     from PyQt5.QtWidgets import QApplication

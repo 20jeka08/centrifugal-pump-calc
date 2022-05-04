@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="created some Output parameters in UI of impeller widget">
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="created cavitation calculation of impeller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/impellercalc.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/impellercalc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +33,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Python/centrifugal-pump-calc/src/ui/styles/images&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Work/Siemens/accelerometer-data-analysis-breath_case_analytics&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -222,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651652023510</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="created cavitation calculation of impeller">
+      <created>1651676490885</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1651676490885</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +248,8 @@
     <MESSAGE value="some changes in UI and API of impeller widget" />
     <MESSAGE value="created Input parameters in UI of impeller widget" />
     <MESSAGE value="created some Output parameters in UI of impeller widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="created some Output parameters in UI of impeller widget" />
+    <MESSAGE value="created cavitation calculation of impeller" />
+    <option name="LAST_COMMIT_MESSAGE" value="created cavitation calculation of impeller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
