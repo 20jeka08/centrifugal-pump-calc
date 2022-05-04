@@ -10,9 +10,6 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
         self.imp = ImpellerCalc()
         self.calculatePushButton.clicked.connect(self.calc_impeller)
 
-    def set_impeller(self, impeller: ImpellerCalc):
-        self.imp = impeller
-
     def calc_impeller(self):
 
         self.imp.Q = self.volumeFlowRateDoubleSpinBox.value() / 3600
@@ -49,13 +46,26 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
         L = self.imp.L(D2=D2)
         self.LLabel.setText(str(round(L, 2)))
 
+        volume_efficiency = self.imp.VolumeEffEstimation()
+        c1m = self.imp.c1m(D1=D0, shaftD=d0, volumeEfficiency=volume_efficiency)
+        u1h = self.imp.u1(d0)
+        u1s = self.imp.u1(D0)
+        e1 = self.imp.bladeThickness(D2)
+        Z = self.bladesNumberSpinBox.value()
 
+        beta1s = self.imp.inletBladeAngle(c1m=c1m, u1=u1s, D1=D0, Z=Z, e1=e1, i=0.0)
+        beta1h = self.imp.inletBladeAngle(c1m=c1m, u1=u1h, D1=D0, Z=Z, e1=e1, i=0.0)
+        beta2 = self.beta2DoubleSpinBox.value()
 
+        self.Beta1sLabel.setText(str(beta1s))
+        self.Beta1hLabel.setText(str(beta1h))
+        self.Beta2Label.setText(str(beta2))
 
+        omega_blade = self.imp.omegaBlade(Z=Z)
+        self.omegaBladeLabel.setText(str(round(omega_blade, 2)))
 
-
-
-
+        e1 = self.imp.bladeThickness(D2=D2)
+        self.thiknessLabel.setText(str(e1))
 
 
 if __name__ == '__main__':
@@ -64,7 +74,5 @@ if __name__ == '__main__':
 
     app = QApplication(sys.argv)
     win = ImpellerWidget()
-    imp = ImpellerCalc()
-    win.set_impeller(impeller=imp)
     win.show()
     sys.exit(app.exec_())

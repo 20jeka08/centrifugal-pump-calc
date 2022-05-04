@@ -179,7 +179,7 @@ class ImpellerCalc:
 
     def VolumeEffEstimation(self):
         '''Estimation volume efficiency based on specific speed (RU), VolEff [%]'''
-        VolEff = 1 / (1 + 0.68 / self.ns() ** (2 / 3))
+        VolEff = 1 / (1 + 0.68 / self.ns ** (2 / 3))
         return VolEff * 100.0
 
     def bladeThickness(self, D2):
@@ -250,6 +250,11 @@ class ImpellerCalc:
         Beta1flow = np.arctan(c1m * tau1 / (u1 - c1u)) * 180 / np.pi
         Beta1 = Beta1flow + i
         return round(Beta1, 2)
+
+    def omegaBlade(self, Z):
+        '''Angle of blade in plane view Omega [deg]'''
+        omega_blade = 800 / Z
+        return omega_blade
 
     # OUTLET VELOCITY TRIANGLE
     def u2(self, D2):

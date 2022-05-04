@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="created some Output parameters in UI of impeller widget">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/impellercalc.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/impellercalc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651611717268</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="created some Output parameters in UI of impeller widget">
+      <created>1651618998552</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651618998553</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
