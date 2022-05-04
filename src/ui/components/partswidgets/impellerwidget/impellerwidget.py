@@ -28,14 +28,17 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
             Eff = self.imp.EfficiencyRadialSingleStageSingeEntry()
             HydrEff = self.imp.HydraulicEfficiencyRadialPumpSingleStage()
             C_kr = 1000.0
+            double_entry = False
         elif self.typePumpComboBox.currentText() == 'Single Stage, Double Entry':
             Eff = self.imp.EfficiencyRadialSingleStageDoubleEntry()
             HydrEff = self.imp.HydraulicEfficiencyRadialPumpSingleStage()
-            C_kr = 2000.0
+            C_kr = 1200.0
+            double_entry = True
         else:
             Eff = self.imp.EfficiencyRadialMultistageSingleEntry()
             HydrEff = self.imp.HydraulicEfficiencyRadialPumpMultistage()
             C_kr = 800.0
+            double_entry = False
 
         Pmax = self.imp.Pmax(Efficiency=Eff)
         s_sf = self.shaftSafetyFactorDoubleSpinBox.value()
@@ -67,6 +70,9 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
         e1 = self.imp.bladeThickness(D2=D2)
         self.thiknessLabel.setText(str(e1))
 
+        self.cavitationCoefficientLabel.setText(str(C_kr))
+        dh = self.imp.cavitationHead(C_kr=C_kr, doubleEntry=double_entry)
+        self.cavitationValueLabel.setText(str(dh))
 
 if __name__ == '__main__':
     from PyQt5.QtWidgets import QApplication

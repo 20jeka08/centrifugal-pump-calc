@@ -340,6 +340,16 @@ class ImpellerCalc:
         Head = hydraulicEff * u2 * c2u_pred / 9.80666
         return round(Head, 2)
 
+    def cavitationHead(self, C_kr, doubleEntry: bool):
+        '''NPSH of pump baced C_kr coefficient - dh [m]'''
+        if doubleEntry == True:
+            Q_fact = self.Q/2
+        else:
+            Q_fact = self.Q
+
+        dh = (5.62*self.n*np.sqrt(Q_fact)/C_kr)**(4./3.)
+        return dh
+
 
 if __name__ == '__main__':
     imp = ImpellerCalc()
