@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1046</width>
-    <height>670</height>
+    <height>612</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -175,7 +175,7 @@ QPushButton:pressed {
         <x>0</x>
         <y>0</y>
         <width>253</width>
-        <height>648</height>
+        <height>590</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -184,10 +184,14 @@ QPushButton:pressed {
          <property name="font">
           <font>
            <family>Calibri</family>
-           <pointsize>12</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
+           <pointsize>14</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 14pt &quot;Calibri&quot;;</string>
          </property>
          <property name="text">
           <string>Pump Parameters:</string>
@@ -458,7 +462,7 @@ QPushButton:pressed {
     </widget>
    </item>
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout" stretch="92,8">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="92">
      <item>
       <widget class="QScrollArea" name="scrollArea_2">
        <property name="frameShape">
@@ -474,7 +478,7 @@ QPushButton:pressed {
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-67</y>
+          <y>0</y>
           <width>229</width>
           <height>655</height>
          </rect>
@@ -932,83 +936,6 @@ QPushButton:pressed {
         </layout>
        </widget>
       </widget>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QPushButton" name="calculatePushButton">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>200</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="sizeIncrement">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Calibri</family>
-           <pointsize>11</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
-	background-color: rgb(55, 179, 74);
-	color: rgb(255, 255, 255);
-	border: none;
-	border-radius: 10px
-}
-
-QPushButton:hover {
-	background-color: rgb(71, 226, 90);
-}
-
-QPushButton:pressed {
-	background-color: rgb(108, 244, 121);
-}</string>
-         </property>
-         <property name="text">
-          <string>Calculate</string>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>16</width>
-           <height>16</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>false</bool>
-         </property>
-         <property name="autoDefault">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </item>
     </layout>
    </item>

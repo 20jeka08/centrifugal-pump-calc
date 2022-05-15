@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="added stator vanes API for calc">
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="added stator widget to main window">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen.py" beforeDir="false" afterPath="$PROJECT_DIR$/codegen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/styles/images/polytech_label.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/styles/images/polytech_label.JPG" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652604649823</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added stator widget to main window">
+      <created>1652612890435</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1652612890435</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -350,7 +360,8 @@
     <MESSAGE value="main window added tree widget" />
     <MESSAGE value="added tab widget" />
     <MESSAGE value="added stator vanes API for calc" />
-    <option name="LAST_COMMIT_MESSAGE" value="added stator vanes API for calc" />
+    <MESSAGE value="added stator widget to main window" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stator widget to main window" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

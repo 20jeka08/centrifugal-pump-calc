@@ -8,7 +8,6 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
         super().__init__(parent)
         self.setupUi(self)
         self.imp = ImpellerCalc()
-        self.calculatePushButton.clicked.connect(self.calc_impeller)
 
     def calc_impeller(self):
 
