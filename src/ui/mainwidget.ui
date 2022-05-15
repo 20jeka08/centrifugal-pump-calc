@@ -82,7 +82,7 @@
         <enum>QTabWidget::Rounded</enum>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="elideMode">
         <enum>Qt::ElideNone</enum>
@@ -107,19 +107,11 @@
          <string>Рабочее колесо</string>
         </attribute>
        </widget>
-       <widget class="QWidget" name="statorVanesTab">
+       <widget class="StatorVanesWidget" name="statorVanesTab">
         <attribute name="title">
          <string>Лопаточный НА</string>
         </attribute>
-        <layout class="QVBoxLayout" name="verticalLayout_2">
-         <item>
-          <widget class="QLabel" name="label_3">
-           <property name="text">
-            <string>Лопаточный НА</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <layout class="QVBoxLayout" name="verticalLayout_2"/>
        </widget>
        <widget class="QWidget" name="statorChannelsTab">
         <attribute name="title">
@@ -146,6 +138,12 @@
    <class>ImpellerWidget</class>
    <extends>QWidget</extends>
    <header>src.ui.components.partswidgets.impellerwidget.impellerwidget</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StatorVanesWidget</class>
+   <extends>QWidget</extends>
+   <header>src.ui.components.partswidgets.statorvaneswidget.statorvaneswidget</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="vanes">
+    <file>images/st_vanes.jpg</file>
+  </qresource>
+</RCC>
