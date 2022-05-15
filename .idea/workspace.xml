@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="main window added tree widget">
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="added tab widget">
+      <change afterPath="$PROJECT_DIR$/src/api/statorvanescalc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651700312989</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added tab widget">
+      <created>1651705629447</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1651705629447</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +309,8 @@
     <MESSAGE value="impeller widget was made" />
     <MESSAGE value="main widget with title" />
     <MESSAGE value="main window added tree widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="main window added tree widget" />
+    <MESSAGE value="added tab widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tab widget" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
