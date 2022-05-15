@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="added tab widget">
-      <change afterPath="$PROJECT_DIR$/src/api/statorvanescalc.py" afterDir="false" />
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="added stator vanes API for calc">
+      <change afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -284,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651705629447</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added stator vanes API for calc">
+      <created>1652603153616</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1652603153616</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -310,7 +317,8 @@
     <MESSAGE value="main widget with title" />
     <MESSAGE value="main window added tree widget" />
     <MESSAGE value="added tab widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tab widget" />
+    <MESSAGE value="added stator vanes API for calc" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stator vanes API for calc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
