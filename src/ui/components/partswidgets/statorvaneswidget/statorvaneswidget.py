@@ -27,6 +27,8 @@ class StatorVanesWidget(QWidget, Ui_StatorVanesWidget):
         self.numberOfStagesLabel.setText(str(st_v.i))
 
 
+
+
 if __name__ == '__main__':
     from PyQt5.QtWidgets import QApplication
     import sys
