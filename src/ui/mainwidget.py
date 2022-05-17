@@ -22,6 +22,8 @@ class MainWidget(QWidget, Ui_MainWidget):
         self.statorVanesTab.D0 = float(self.impellerTab.D0Label.text())
         self.statorVanesTab.d0 = float(self.impellerTab.d0Label.text())
         self.statorVanesTab.c2u = self.impellerTab.imp.c2u
+        self.statorVanesTab.hydraulicEff = self.impellerTab.hydraulicEff
+        self.statorVanesTab.Z_imp = self.impellerTab.bladesNumberSpinBox.value()
         self.statorVanesTab.calc_statorvanes()
 
 

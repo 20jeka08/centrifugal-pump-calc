@@ -84,7 +84,7 @@ class StatorVanesCalc(ImpellerCalc):
 
     def alpha4(self, alpha3, D4toD2):
 
-        nq = self.nq()
+        nq = self.nq
         priority = D4toD2-0.01*nq
         R1 = 7.3
         L_min = 55.6

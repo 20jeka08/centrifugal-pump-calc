@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import QWidget
 from src.ui.components.partswidgets.impellerwidget.ui_impellerwidget import Ui_ImpellerWidget
 from src.api.impellercalc import ImpellerCalc
+from typing import Optional
 
 
 class ImpellerWidget(QWidget, Ui_ImpellerWidget):
@@ -8,6 +9,7 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
         super().__init__(parent)
         self.setupUi(self)
         self.imp = ImpellerCalc()
+        self.hydraulicEff: Optional[float] = None
 
     def calc_impeller(self):
 
@@ -38,6 +40,8 @@ class ImpellerWidget(QWidget, Ui_ImpellerWidget):
             HydrEff = self.imp.HydraulicEfficiencyRadialPumpMultistage()
             C_kr = 800.0
             double_entry = False
+
+        self.hydraulicEff = HydrEff
 
         Pmax = self.imp.Pmax(Efficiency=Eff)
         s_sf = self.shaftSafetyFactorDoubleSpinBox.value()

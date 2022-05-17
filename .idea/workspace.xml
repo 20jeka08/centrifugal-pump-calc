@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="changes in structure, some additions in stator vanes widget">
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="changes in stator vanes widget">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/statorvanescalc.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/statorvanescalc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -336,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652659023474</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="changes in stator vanes widget">
+      <created>1652797782739</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1652797782739</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,7 +374,8 @@
     <MESSAGE value="added stator vanes API for calc" />
     <MESSAGE value="added stator widget to main window" />
     <MESSAGE value="changes in structure, some additions in stator vanes widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in structure, some additions in stator vanes widget" />
+    <MESSAGE value="changes in stator vanes widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes in stator vanes widget" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

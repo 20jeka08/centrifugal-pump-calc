@@ -20,6 +20,7 @@ class StatorVanesWidget(QWidget, Ui_StatorVanesWidget):
         self.d0: Optional[float] = None
         self.D0: Optional[float] = None
         self.hydraulicEff: Optional[float] = None
+        self.Z_imp: Optional[int] = None
 
     def calc_statorvanes(self):
 
@@ -65,8 +66,43 @@ class StatorVanesWidget(QWidget, Ui_StatorVanesWidget):
 
         c3m = st_v.c3m(D3=D3, b3=b3)
 
-        c2u = st_v.c2u(hydraulicEff=self.hydraulicEff, )
+        u2 = st_v.u2(D2=self.D2)
+        c2u = st_v.c2u(hydraulicEff=self.hydraulicEff, u2=u2)
         c3u = st_v.c3u(D2=self.D2, D3=D3, c2u=c2u)
+        alpha3 = round(st_v.alpha3(c3m=c3m, c3u=c3u), 2)
+        self.beta3Label.setText(str(alpha3))
+
+        alpha4 = round(st_v.alpha4(alpha3=alpha3, D4toD2=D4_D2), 2)
+        self.beta4Label.setText(str(alpha4))
+
+        alpha5 = round(st_v.alpha5(alpha4=alpha4, b3=b3, b6=b5), 2)
+        self.beta5Label.setText(str(alpha5))
+        self.beta6Label.setText(str(st_v.alpha6()))
+
+        if self.Z_imp < 5:
+            Z3 = 7
+        elif self.Z_imp == 5:
+            Z3 = 8
+        elif self.Z_imp == 6:
+            Z3 = 10
+        elif self.Z_imp == 7:
+            Z3 = 11
+        elif 7 < self.Z_imp < 11:
+            Z3 = 11
+        elif 11 <= self.Z_imp < 13:
+            Z3 = 13
+        elif self.Z_imp > 13:
+            Z3 = 15
+
+        self.numberOfBladesLabel.setText(str(Z3))
+
+        e3 = round(0.0125 * self.D2, 2)
+        self.thicknessLabel.setText(str(e3))
+
+
+
+
+
 
 
 
