@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="changes in stator vanes widget">
+    <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="stator vanes widget was made">
+      <change afterPath="$PROJECT_DIR$/src/api/channeldiffusercalc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/channeldiffuserwidget/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/channeldiffuserwidget/channeldiffuserwidget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/statorvanescalc.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/statorvanescalc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/impellerwidget/impellerwidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652797782739</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="stator vanes widget was made">
+      <created>1652814594598</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1652814594598</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,7 +380,8 @@
     <MESSAGE value="added stator widget to main window" />
     <MESSAGE value="changes in structure, some additions in stator vanes widget" />
     <MESSAGE value="changes in stator vanes widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in stator vanes widget" />
+    <MESSAGE value="stator vanes widget was made" />
+    <option name="LAST_COMMIT_MESSAGE" value="stator vanes widget was made" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
