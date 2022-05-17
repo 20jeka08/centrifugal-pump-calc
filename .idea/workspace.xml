@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4993ff47-db7b-4836-9bbf-a7198b86889a" name="Changes" comment="changes in structure, some additions in stator vanes widget">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/statorvanescalc.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/statorvanescalc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.ui" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/partswidgets/statorvaneswidget/statorvaneswidget.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/mainwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/mainwidget.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

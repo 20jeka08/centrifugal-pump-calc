@@ -15,6 +15,13 @@ class MainWidget(QWidget, Ui_MainWidget):
         self.statorVanesTab.H = float(self.impellerTab.headLabel.text())
         self.statorVanesTab.n = self.impellerTab.imp.n
         self.statorVanesTab.i = self.impellerTab.imp.i
+        self.statorVanesTab.ns = self.impellerTab.imp.ns
+        self.statorVanesTab.nq = self.impellerTab.imp.nq
+        self.statorVanesTab.D2 = float(self.impellerTab.d2Label.text())
+        self.statorVanesTab.b2 = float(self.impellerTab.b2Label.text())
+        self.statorVanesTab.D0 = float(self.impellerTab.D0Label.text())
+        self.statorVanesTab.d0 = float(self.impellerTab.d0Label.text())
+        self.statorVanesTab.c2u = self.impellerTab.imp.c2u
         self.statorVanesTab.calc_statorvanes()
 
 

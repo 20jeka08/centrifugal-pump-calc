@@ -1,15 +1,14 @@
 import numpy as np
 from dataclasses import dataclass
 from typing import Optional
+from src.api.impellercalc import ImpellerCalc
 
 
 @dataclass
-class StatorVanesCalc:
-    Q: Optional[float] = None
-    H: Optional[float] = None
-    n: Optional[float] = None
-    i: Optional[int] = None
-    ro: Optional[float] = 997.0
+class StatorVanesCalc(ImpellerCalc):
+    ns: Optional[float] = None
+    nq: Optional[float] = None
+    Hi: Optional[float] = None
 
 
     def Z_diffuser_vanes(self, Z_impeller):
@@ -27,7 +26,7 @@ class StatorVanesCalc:
 
     def D3_D2(self):
         '''Recomended value of D3 to D2 ratio by Gulich'''
-        nq = self.nq()
+        nq = self.nq
         if self.Hi < 100:
             D3toD2 = 1.015
         else:
@@ -57,7 +56,7 @@ class StatorVanesCalc:
         '''Recomended ratio of outlet diameter of diffuser vanes to impeller diameter  - D4 to D2 [-],
         Input parameters: priority - is coefficient from 1.05 to 1.15. The biggest value of priority for best
         efficiency. Default value is 1.1'''
-        nq = self.nq()
+        nq = self.nq
         D4toD2 = priority+0.01*nq
         return D4toD2
 
